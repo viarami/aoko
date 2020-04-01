@@ -1,0 +1,569 @@
+{
+  "Main": {
+    "title": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading1",
+        "label": "Title",
+        "placeholder": "Title…"
+      }
+    },
+    "subtitle": {
+      "type": "StructuredText",
+      "config": {
+        "single": "heading2",
+        "label": "Subtitle",
+        "placeholder": "Subtitle…"
+      }
+    },
+    "body": {
+      "type": "Slices",
+      "fieldset": "Slice zone",
+      "config": {
+        "labels": {
+          "team": [],
+          "list": [],
+          "text": [],
+          "gallery": [],
+          "image": [],
+          "portfolio_overview": [],
+          "related_pages": [],
+          "image_header": []
+        },
+        "choices": {
+          "team": {
+            "type": "Slice",
+            "fieldset": "Team",
+            "description": "Overview over your team",
+            "icon": "face",
+            "display": "list",
+            "non-repeat": {
+              "team_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1",
+                  "label": "title",
+                  "placeholder": "Title…"
+                }
+              },
+              "team_description": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph, strong, hyperlink",
+                  "label": "Description",
+                  "placeholder": "Description…"
+                }
+              }
+            },
+            "repeat": {
+              "team_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 2048
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "1536",
+                      "width": 1536,
+                      "height": null
+                    },
+                    {
+                      "name": "1024",
+                      "width": 1024,
+                      "height": null
+                    },
+                    {
+                      "name": "768",
+                      "width": 768,
+                      "height": null
+                    },
+                    {
+                      "name": "640",
+                      "width": 640,
+                      "height": null
+                    },
+                    {
+                      "name": "320",
+                      "width": 320,
+                      "height": null
+                    }
+                  ],
+                  "label": "Image"
+                }
+              },
+              "team_name": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1",
+                  "label": "team_name",
+                  "placeholder": "Name…"
+                }
+              },
+              "team_role": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading2",
+                  "label": "team_role",
+                  "placeholder": "Role of the member"
+                }
+              },
+              "description": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "paragraph, strong",
+                  "label": "Description",
+                  "placeholder": "Text about the team member"
+                }
+              }
+            }
+          },
+          "list": {
+            "type": "Slice",
+            "fieldset": "List",
+            "description": "A list with content",
+            "icon": "format_list_numbered",
+            "display": "list",
+            "non-repeat": {
+              "style": {
+                "type": "Select",
+                "config": {
+                  "options": ["Style1", "Style2"],
+                  "default_value": "Style1",
+                  "label": "Style"
+                }
+              },
+              "headline": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1",
+                  "label": "Headline",
+                  "placeholder": "Headline for the List…"
+                }
+              },
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 2048
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "1536",
+                      "width": 1536,
+                      "height": null
+                    },
+                    {
+                      "name": "1024",
+                      "width": 1024,
+                      "height": null
+                    },
+                    {
+                      "name": "768",
+                      "width": 768,
+                      "height": null
+                    },
+                    {
+                      "name": "640",
+                      "width": 640,
+                      "height": null
+                    },
+                    {
+                      "name": "320",
+                      "width": 320,
+                      "height": null
+                    }
+                  ],
+                  "label": "Image"
+                }
+              }
+            },
+            "repeat": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1",
+                  "label": "Title",
+                  "placeholder": "Title of the item"
+                }
+              },
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, heading1, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink",
+                  "label": "Text",
+                  "placeholder": "Text of the list Item"
+                }
+              }
+            }
+          },
+          "text": {
+            "type": "Slice",
+            "fieldset": "Text",
+            "description": "Block with text",
+            "icon": "format_color_text",
+            "display": "list",
+            "non-repeat": {
+              "style": {
+                "type": "Select",
+                "config": {
+                  "options": ["Style1", "Style2"],
+                  "default_value": "Style1",
+                  "label": "Style"
+                }
+              },
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1",
+                  "label": "Title",
+                  "placeholder": "Title…"
+                }
+              },
+              "text": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, preformatted, heading2, heading3, heading4, heading5, heading6, strong, em, hyperlink",
+                  "label": "Text",
+                  "placeholder": "Text…"
+                }
+              },
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 2048
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "1536",
+                      "width": 1536,
+                      "height": null
+                    },
+                    {
+                      "name": "1024",
+                      "width": 1024,
+                      "height": null
+                    },
+                    {
+                      "name": "768",
+                      "width": 768,
+                      "height": null
+                    },
+                    {
+                      "name": "640",
+                      "width": 640,
+                      "height": null
+                    },
+                    {
+                      "name": "320",
+                      "width": 320,
+                      "height": null
+                    }
+                  ],
+                  "label": "Image"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "gallery": {
+            "type": "Slice",
+            "fieldset": "Gallery",
+            "description": "Gallery with photos",
+            "icon": "add_a_photo",
+            "display": "grid",
+            "non-repeat": {
+              "title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1",
+                  "label": "Title",
+                  "placeholder": "Title for the Gallery…"
+                }
+              },
+              "column_number": {
+                "type": "Select",
+                "config": {
+                  "options": ["2", "3", "4"],
+                  "default_value": "2",
+                  "label": "Column Number"
+                }
+              }
+            },
+            "repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 2048
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "1536",
+                      "width": 1536,
+                      "height": null
+                    },
+                    {
+                      "name": "1024",
+                      "width": 1024,
+                      "height": null
+                    },
+                    {
+                      "name": "768",
+                      "width": 768,
+                      "height": null
+                    },
+                    {
+                      "name": "640",
+                      "width": 640,
+                      "height": null
+                    },
+                    {
+                      "name": "320",
+                      "width": 320,
+                      "height": null
+                    }
+                  ],
+                  "label": "Image"
+                }
+              }
+            }
+          },
+          "image": {
+            "type": "Slice",
+            "fieldset": "Image",
+            "description": "a single photo",
+            "icon": "camera",
+            "display": "list",
+            "non-repeat": {
+              "whitespace": {
+                "type": "Select",
+                "config": {
+                  "options": ["Center", "Left", "Right", "None"],
+                  "default_value": "Center",
+                  "label": "Whitespace"
+                }
+              },
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 2048
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "1536",
+                      "width": 1536,
+                      "height": null
+                    },
+                    {
+                      "name": "1024",
+                      "width": 1024,
+                      "height": null
+                    },
+                    {
+                      "name": "768",
+                      "width": 768,
+                      "height": null
+                    },
+                    {
+                      "name": "640",
+                      "width": 640,
+                      "height": null
+                    },
+                    {
+                      "name": "320",
+                      "width": 320,
+                      "height": null
+                    }
+                  ],
+                  "label": "Image"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "portfolio_overview": {
+            "type": "Slice",
+            "fieldset": "Portfolio Overview",
+            "description": "Overview over the portfolio items",
+            "icon": "library_books",
+            "display": "list",
+            "non-repeat": {
+              "portfolio_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1",
+                  "label": "Title",
+                  "placeholder": "Title…"
+                }
+              },
+              "portfolio_image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 2048
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "1536",
+                      "width": 1536,
+                      "height": null
+                    },
+                    {
+                      "name": "1024",
+                      "width": 1024,
+                      "height": null
+                    },
+                    {
+                      "name": "768",
+                      "width": 768,
+                      "height": null
+                    },
+                    {
+                      "name": "640",
+                      "width": 640,
+                      "height": null
+                    },
+                    {
+                      "name": "320",
+                      "width": 320,
+                      "height": null
+                    }
+                  ],
+                  "label": "Portfolio"
+                }
+              },
+              "style": {
+                "type": "Select",
+                "config": {
+                  "options": ["Style1", "Style2"],
+                  "default_value": "Style1",
+                  "label": "Style"
+                }
+              }
+            },
+            "repeat": {}
+          },
+          "image_header": {
+            "type": "Slice",
+            "fieldset": "Image Header",
+            "description": "Big photo with text",
+            "icon": "switch_camera",
+            "display": "list",
+            "non-repeat": {
+              "image": {
+                "type": "Image",
+                "config": {
+                  "constraint": {
+                    "width": 2048
+                  },
+                  "thumbnails": [
+                    {
+                      "name": "1536",
+                      "width": 1536,
+                      "height": null
+                    },
+                    {
+                      "name": "1024",
+                      "width": 1024,
+                      "height": null
+                    },
+                    {
+                      "name": "768",
+                      "width": 768,
+                      "height": null
+                    },
+                    {
+                      "name": "640",
+                      "width": 640,
+                      "height": null
+                    },
+                    {
+                      "name": "320",
+                      "width": 320,
+                      "height": null
+                    }
+                  ],
+                  "label": "Image"
+                }
+              },
+              "header_title": {
+                "type": "StructuredText",
+                "config": {
+                  "single": "heading1",
+                  "label": "Title"
+                }
+              },
+              "subtitle": {
+                "type": "StructuredText",
+                "config": {
+                  "multi": "paragraph, strong",
+                  "label": "Subtitle"
+                }
+              }
+            },
+            "repeat": {}
+          }
+        }
+      }
+    }
+  },
+  "Meta": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "Page ID"
+      }
+    },
+    "meta_description": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Meta Description"
+      }
+    },
+    "main_image": {
+      "type": "Image",
+      "config": {
+        "constraint": {
+          "width": 2048
+        },
+        "thumbnails": [
+          {
+            "name": "1536",
+            "width": 1536,
+            "height": null
+          },
+          {
+            "name": "1024",
+            "width": 1024,
+            "height": null
+          },
+          {
+            "name": "768",
+            "width": 768,
+            "height": null
+          },
+          {
+            "name": "640",
+            "width": 640,
+            "height": null
+          },
+          {
+            "name": "320",
+            "width": 320,
+            "height": null
+          },
+          {
+            "name": "social",
+            "width": 1200,
+            "height": 630
+          }
+        ],
+        "label": "Main Image"
+      }
+    }
+  }
+}

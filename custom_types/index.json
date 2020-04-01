@@ -1,0 +1,26 @@
+[
+  {
+    "id": "homepage",
+    "name": "Homepage",
+    "repeatable": false,
+    "value": "homepage.json"
+  },
+  {
+    "id": "settings",
+    "name": "Settings",
+    "repeatable": false,
+    "value": "settings.json"
+  },
+  {
+    "id": "page",
+    "name": "Page",
+    "repeatable": true,
+    "value": "page.json"
+  },
+  {
+    "id": "portfolio",
+    "name": "Portfolio",
+    "repeatable": true,
+    "value": "portfolio.json"
+  }
+]
