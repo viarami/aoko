@@ -2,7 +2,7 @@
   "name": "aoko",
   "version": "1.0.0",
   "description": "A portolio site for photographers and artists",
-  "author": "viarami",
+  "author": "viarami.com",
   "private": true,
   "scripts": {
     "dev": "nuxt",
