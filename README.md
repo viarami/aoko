@@ -17,4 +17,4 @@ $ npm run start
 
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://viarami.com/programming/free-portfolio-15mins/).
+For detailed explanation on how things work, check out [viarami.com](https://viarami.com/programming/free-portfolio-15mins/).
