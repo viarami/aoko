@@ -8,12 +8,8 @@
         <h2
           class="text-4xl font-bold tracking-wider uppercase md:text-6xl"
           v-if="slice.primary.title.length > 0"
-        >
-          {{ $prismic.asText(slice.primary.title) }}
-        </h2>
-        <div
-          class="w-3/12 mt-4 border-b-2 border-gray-800 dark-mode:border-gray-200 line"
-        ></div>
+        >{{ $prismic.asText(slice.primary.title) }}</h2>
+        <div class="w-3/12 mt-4 border-b-2 border-gray-800 dark-mode:border-gray-200 line"></div>
       </div>
 
       <div class="col-start-1 col-end-9 md:col-end-4">
@@ -24,16 +20,9 @@
         />
       </div>
 
-      <div
-        class="col-start-1 col-end-9 text-sm md:col-start-5 md:col-end-8 text-block"
-      >
-        <prismic-rich-text
-          :field="slice.primary.text"
-          v-if="slice.primary.text.length > 0"
-        />
-        <div
-          class="w-3/12 mt-4 ml-auto border-b-2 border-gray-800 dark-mode:border-gray-200 line"
-        ></div>
+      <div class="col-start-1 col-end-9 text-sm md:col-start-5 md:col-end-8 text-container">
+        <prismic-rich-text :field="slice.primary.text" v-if="slice.primary.text.length > 0" />
+        <div class="w-3/12 mt-4 ml-auto border-b-2 border-gray-800 dark-mode:border-gray-200 line"></div>
       </div>
     </div>
 
@@ -45,24 +34,13 @@
         <h2
           class="text-3xl tracking-wider uppercase md:text-5xl"
           v-if="slice.primary.title.length > 0"
-        >
-          {{ $prismic.asText(slice.primary.title) }}
-        </h2>
-        <div
-          class="w-3/12 mt-4 border-b-2 border-gray-800 dark-mode:border-gray-200 line"
-        ></div>
+        >{{ $prismic.asText(slice.primary.title) }}</h2>
+        <div class="w-3/12 mt-4 border-b-2 border-gray-800 dark-mode:border-gray-200 line"></div>
       </div>
 
-      <div
-        class="z-10 col-start-1 col-end-11 text-sm md:col-start-3 md:col-end-9 text-block"
-      >
-        <prismic-rich-text
-          :field="slice.primary.text"
-          v-if="slice.primary.text.length > 0"
-        />
-        <div
-          class="w-3/12 mt-8 ml-auto border-b-2 border-gray-800 dark-mode:border-gray-200 line"
-        ></div>
+      <div class="z-10 col-start-1 col-end-11 text-sm md:col-start-3 md:col-end-9 text-container">
+        <prismic-rich-text :field="slice.primary.text" v-if="slice.primary.text.length > 0" />
+        <div class="w-3/12 mt-8 ml-auto border-b-2 border-gray-800 dark-mode:border-gray-200 line"></div>
       </div>
       <div
         v-if="slice.primary.image.url !== undefined"

@@ -20,4 +20,16 @@ html {
 .text-container p {
   @apply tracking-wide my-2;
 }
+.text-container h2 {
+  @apply text-3xl;
+}
+.text-container h3 {
+  @apply text-2xl;
+}
+.text-container h4 {
+  @apply text-xl;
+}
+.text-container h5 {
+  @apply text-lg;
+}
 </style>
