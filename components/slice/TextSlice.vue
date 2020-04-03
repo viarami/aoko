@@ -2,7 +2,7 @@
   <div class="dark-mode:text-white">
     <div
       v-if="slice.primary.style === 'Style1'"
-      class="grid grid-cols-8 row-gap-16 px-8 py-16 my-16 bg-gray-100 md:my-32 dark-mode:bg-gray-900 text-block"
+      class="grid grid-cols-8 row-gap-16 px-8 py-16 mb-16 mt-8 bg-gray-100 md:mb-32 mt-16 dark-mode:bg-gray-900 text-block"
     >
       <div class="col-start-2 col-end-9 md:cols-start-3">
         <h2
@@ -28,7 +28,7 @@
 
     <div
       v-else-if="slice.primary.style === 'Style2'"
-      class="relative grid grid-cols-10 row-gap-8 px-8 py-16 my-16 bg-gray-100 md:my-32 text-block"
+      class="relative grid grid-cols-10 row-gap-8 px-8 py-16 mb-16 mt-8 bg-gray-100 md:mb-32 mt-16 text-block"
     >
       <div class="z-10 col-start-2 col-end-11">
         <h2

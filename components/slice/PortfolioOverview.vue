@@ -2,11 +2,9 @@
   <div class="text-black dark-mode:text-white">
     <div
       v-if="slice.primary.style === 'Style1'"
-      class="grid items-center grid-cols-6 px-8 py-16 my-16 bg-gray-100 dark-mode:bg-gray-900 portfolio-block md:my-32"
+      class="grid items-center grid-cols-6 px-8 py-16 mb-16 mt-8 bg-gray-100 dark-mode:bg-gray-900 portfolio-block md:mb-32 mt-16"
     >
-      <div
-        class="col-start-1 col-end-7 my-8 md:col-start-2 md:col-end-4 md:my-0"
-      >
+      <div class="col-start-1 col-end-7 my-8 md:col-start-2 md:col-end-4 md:my-0">
         <div
           class="mb-2 mb-8 text-3xl font-bold tracking-widest uppercase md:text-5xl md:mb-4"
           v-if="slice.primary.portfolio_title.length > 0"
@@ -15,26 +13,17 @@
         </div>
 
         <div v-for="item in portfolioItems" :key="item.id">
-          <div
-            class="mb-2 text-lg tracking-wide uppercase"
-            v-if="item.data.title.length > 0"
-          >
-            <nuxt-link :to="LinkGetter(item)">
-              {{ $prismic.asText(item.data.title) }}</nuxt-link
-            >
+          <div class="mb-2 text-lg tracking-wide uppercase" v-if="item.data.title.length > 0">
+            <nuxt-link :to="LinkGetter(item)">{{ $prismic.asText(item.data.title) }}</nuxt-link>
           </div>
 
           <div
             class="mb-4 text-sm font-light"
             v-if="item.data.subtitle.length > 0"
-          >
-            {{ $prismic.asText(item.data.subtitle) }}
-          </div>
+          >{{ $prismic.asText(item.data.subtitle) }}</div>
         </div>
       </div>
-      <div
-        class="col-start-1 col-end-7 my-8 md:col-start-4 md:col-end-6 md:my-0"
-      >
+      <div class="col-start-1 col-end-7 my-8 md:col-start-4 md:col-end-6 md:my-0">
         <ResponsiveImg
           v-if="slice.primary.portfolio_image.url !== undefined"
           :imgobject="slice.primary.portfolio_image"
@@ -45,12 +34,12 @@
 
     <div
       v-else-if="slice.primary.style === 'Style2'"
-      class="px-8 py-16 my-16 bg-gray-100 dark-mode:bg-gray-900 portfolio-block md:my-32"
+      class="px-8 py-16 mb-16 mt-8 bg-gray-100 dark-mode:bg-gray-900 portfolio-block md:mb-32 mt-16"
     >
       <div v-if="slice.primary.portfolio_title.length > 0">
-        <h2 class="text-3xl font-bold tracking-widest uppercase">
-          {{ $prismic.asText(slice.primary.portfolio_title) }}
-        </h2>
+        <h2
+          class="text-3xl font-bold tracking-widest uppercase"
+        >{{ $prismic.asText(slice.primary.portfolio_title) }}</h2>
       </div>
 
       <div class="grid grid-cols-3 gap-8 my-8 md:gap-16">
@@ -69,15 +58,11 @@
             <div
               class="mt-4 text-lg font-medium tracking-wider uppercase title"
               v-if="item.data.title.length > 0"
-            >
-              {{ $prismic.asText(item.data.title) }}
-            </div>
+            >{{ $prismic.asText(item.data.title) }}</div>
             <div
               class="mt-2 text-sm font-light"
               v-if="item.data.subtitle.length > 0"
-            >
-              {{ $prismic.asText(item.data.subtitle) }}
-            </div>
+            >{{ $prismic.asText(item.data.subtitle) }}</div>
           </nuxt-link>
         </div>
       </div>

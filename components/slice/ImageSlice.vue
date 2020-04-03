@@ -1,13 +1,10 @@
 <template>
-  <div class="grid grid-cols-12 my-16 bg-white md:my-32 dark-mode:bg-black">
+  <div class="grid grid-cols-12 mb-16 mt-8 bg-white md:mb-32 mt-16 dark-mode:bg-black">
     <div v-if="slice.primary.whitespace === 'None'" class="col-span-12">
       <ResponsiveImg :imgobject="slice.primary.image" :sizes="'100vw'" />
     </div>
 
-    <div
-      v-else-if="slice.primary.whitespace === 'Left'"
-      class="col-start-3 col-end-13"
-    >
+    <div v-else-if="slice.primary.whitespace === 'Left'" class="col-start-3 col-end-13">
       <ResponsiveImg :imgobject="slice.primary.image" :sizes="'90vw'" />
     </div>
 
@@ -15,10 +12,7 @@
       <ResponsiveImg :imgobject="slice.primary.image" :sizes="'90vw'" />
     </div>
 
-    <div
-      v-else-if="slice.primary.whitespace === 'Center'"
-      class="col-start-2 col-end-12"
-    >
+    <div v-else-if="slice.primary.whitespace === 'Center'" class="col-start-2 col-end-12">
       <ResponsiveImg :imgobject="slice.primary.image" :sizes="'90vw'" />
     </div>
   </div>

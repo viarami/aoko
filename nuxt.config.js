@@ -36,6 +36,12 @@ export default {
     '@nuxtjs/tailwindcss'
   ],
   /*
+   ** purgeCSS
+   */
+  purgeCSS: {
+    whitelist: ['^col-start-', '^col-end-']
+  },
+  /*
    ** Nuxt.js modules
    */
   modules: ['@nuxtjs/prismic'],
