@@ -48,9 +48,13 @@ export default {
 
 <style scoped>
 .two,
-.three,
-.four {
+.three {
   column-count: 1;
+  column-gap: 2rem;
+}
+
+.four {
+  column-count: 2;
   column-gap: 2rem;
 }
 

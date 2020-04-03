@@ -2,7 +2,7 @@
   <div class="list-block">
     <div
       v-if="slice.primary.style === 'Style1'"
-      class="grid items-center grid-cols-10 gap-8 px-4 py-16 mb-16 mt-8 bg-gray-100 dark-mode:bg-gray-900 md:px-8 dark-mode:bg-black dark-mode:text-white list-slice md:mb-32 mt-16"
+      class="grid items-center grid-cols-10 gap-8 px-4 py-16 mt-8 mt-16 mb-16 bg-gray-100 dark-mode:bg-gray-900 md:px-8 dark-mode:bg-black dark-mode:text-white list-slice md:mb-32"
     >
       <div class="col-start-2 col-end-10 py-8">
         <h2
@@ -41,7 +41,7 @@
 
     <div
       v-else-if="slice.primary.style === 'Style2'"
-      class="relative grid items-center grid-cols-10 gap-8 row-gap-16 px-4 py-16 mb-16 mt-8 bg-gray-100 dark-mode:text-white md:px-8 dark-mode:bg-gray-900 list md:mb-32 mt-16"
+      class="relative grid items-center grid-cols-10 gap-8 row-gap-16 px-4 py-16 mt-8 mt-16 mb-16 bg-gray-100 dark-mode:text-white md:px-8 dark-mode:bg-gray-900 list md:mb-32"
     >
       <div class="z-10 col-start-2 col-end-10 py-8">
         <h2
@@ -54,13 +54,13 @@
       <template v-for="(item, index) in slice.items">
         <div
           :key="index"
-          :class="`md:col-start-${index + 2} md:col-end-${index + 4}`"
+          :class="`number-${index + 1}`"
           class="z-10 col-start-1 col-end-3 text-4xl font-extrabold text-center"
         >0{{ index + 1 }}</div>
 
         <div
           :key="index"
-          :class="`md:col-start-${index + 4} md:col-end-${index + 8}`"
+          :class="`text-${index + 1}`"
           class="z-10 col-start-3 col-end-11 text-sm text-container"
         >
           <h3
@@ -103,3 +103,38 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+@screen md {
+  .number-1 {
+    @apply col-start-1 col-end-3;
+  }
+  .text-1 {
+    @apply col-start-3 col-end-7;
+  }
+  .number-2 {
+    @apply col-start-2 col-end-4;
+  }
+  .text-2 {
+    @apply col-start-4 col-end-8;
+  }
+  .number-3 {
+    @apply col-start-3 col-end-5;
+  }
+  .text-3 {
+    @apply col-start-5 col-end-9;
+  }
+  .number-4 {
+    @apply col-start-4 col-end-6;
+  }
+  .text-4 {
+    @apply col-start-6 col-end-10;
+  }
+  .number-5 {
+    @apply col-start-5 col-end-7;
+  }
+  .text-5 {
+    @apply col-start-7 col-end-11;
+  }
+}
+</style>
