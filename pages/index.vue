@@ -26,7 +26,7 @@ export default {
       // Query Settings
       const settings = await $prismic.api.getSingle('settings')
 
-      // Query to get post content
+      // Query post content
       const post = await $prismic.api.getSingle('homepage')
 
       // Get Meta Data
@@ -34,7 +34,6 @@ export default {
 
       // Returns data to be used in template
       return {
-        document: post,
         slices: post.data.body,
         metadata: metadata,
         settings: settings.data
