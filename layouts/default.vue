@@ -3,16 +3,21 @@
     <nuxt />
   </div>
 </template>
+<script>
+require('typeface-inter')
+require('typeface-libre-baskerville')
+export default {
+  name: 'Default'
+}
+</script>
 
 <style>
 html {
+  @apply box-border antialiased;
   font-family: 'Inter', sans-serif;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
 }
 .text-container {
   font-family: 'Libre Baskerville', serif;
