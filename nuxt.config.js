@@ -23,7 +23,10 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    '~/node_modules/typeface-inter/inter.css',
+    '~/node_modules/typeface-libre-baskerville/index.css'
+  ],
   /*
    ** Plugins to load before mounting the App
    */

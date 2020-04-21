@@ -4,8 +4,6 @@
   </div>
 </template>
 <script>
-require('typeface-inter')
-require('typeface-libre-baskerville')
 export default {
   name: 'Default'
 }

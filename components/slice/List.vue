@@ -13,13 +13,10 @@
       </div>
       <div class="grid grid-cols-1 col-span-10 row-gap-16 md:col-span-6">
         <div class="grid grid-cols-6 col-span-1" v-for="(item, index) in slice.items" :key="index">
-          <div class="col-span-2 text-4xl font-extrabold text-center">0{{ index + 1 }}</div>
+          <div class="col-span-2 text-4xl font-bold text-center">0{{ index + 1 }}</div>
 
           <div class="col-span-4 text-sm text">
-            <h3
-              class="text-xl font-medium"
-              v-if="item.title.length > 0"
-            >{{ $prismic.asText(item.title) }}</h3>
+            <h3 class="text-xl" v-if="item.title.length > 0">{{ $prismic.asText(item.title) }}</h3>
 
             <prismic-rich-text :field="item.text" v-if="item.text.length > 0" />
 
@@ -55,7 +52,7 @@
         <div
           :key="index"
           :class="`number-${index + 1}`"
-          class="z-10 col-start-1 col-end-3 text-4xl font-extrabold text-center"
+          class="z-10 col-start-1 col-end-3 text-4xl font-bold text-center"
         >0{{ index + 1 }}</div>
 
         <div
@@ -63,10 +60,7 @@
           :class="`text-${index + 1}`"
           class="z-10 col-start-3 col-end-11 text-sm text-container"
         >
-          <h3
-            class="mb-2 text-xl font-medium"
-            v-if="item.title.length > 0"
-          >{{ $prismic.asText(item.title) }}</h3>
+          <h3 class="mb-2 text-xl" v-if="item.title.length > 0">{{ $prismic.asText(item.title) }}</h3>
           <prismic-rich-text :field="item.text" v-if="item.text.length > 0" />
           <div
             class="w-3/12 mt-8 ml-auto border-b-2 border-gray-800 dark-mode:border-gray-200 line"
