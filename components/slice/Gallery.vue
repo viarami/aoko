@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="py-2 py-16 mt-8 mt-16 mb-16 bg-gray-100 md:px-8 gallery-block md:mb-32 dark-mode:bg-gray-900"
-  >
+  <div class="py-2 my-16 bg-gray-100 md:py-16 md:px-8 gallery-block md:my-32 dark-mode:bg-gray-900">
     <div
       class="pl-4 mb-8 text-3xl title dark-mode:text-white md:pl-0"
       v-if="slice.primary.title.length > 0"

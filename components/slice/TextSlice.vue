@@ -2,7 +2,7 @@
   <div class="dark-mode:text-white">
     <div
       v-if="slice.primary.style === 'Style1'"
-      class="grid grid-cols-8 row-gap-16 px-8 py-16 mt-8 mt-16 mb-16 bg-gray-100 dark-mode:bg-gray-900 md:mb-32 text-block"
+      class="grid grid-cols-8 row-gap-16 px-8 py-16 my-16 bg-gray-100 dark-mode:bg-gray-900 md:my-32 text-block"
     >
       <div class="col-start-2 col-end-9 md:cols-start-3">
         <h2

@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-12 mb-16 mt-8 bg-white md:mb-32 mt-16 dark-mode:bg-black">
+  <div class="grid grid-cols-12 my-16 bg-white md:mb-32 dark-mode:bg-black">
     <div v-if="slice.primary.whitespace === 'None'" class="col-span-12">
       <ResponsiveImg :imgobject="slice.primary.image" :sizes="'100vw'" />
     </div>

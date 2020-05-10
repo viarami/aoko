@@ -1,6 +1,6 @@
 <template>
   <div
-    class="grid grid-cols-4 gap-8 px-8 py-16 mb-16 mt-8 bg-gray-100 dark-mode:bg-gray-900 dark-mode:text-white team-slice md:mb-32 mt-16"
+    class="grid grid-cols-4 gap-8 px-8 py-16 my-16 bg-gray-100 dark-mode:bg-gray-900 dark-mode:text-white team-slice md:my-32"
   >
     <div class="col-span-4 md:col-span-1">
       <div class="mb-4 text-2xl font-bold uppercase title">

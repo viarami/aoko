@@ -2,7 +2,7 @@
   <div class="list-block">
     <div
       v-if="slice.primary.style === 'Style1'"
-      class="grid items-center grid-cols-10 gap-8 px-4 py-16 mt-8 mt-16 mb-16 bg-gray-100 dark-mode:bg-gray-900 md:px-8 dark-mode:bg-black dark-mode:text-white list-slice md:mb-32"
+      class="grid items-center grid-cols-10 gap-8 px-4 my-16 bg-gray-100 md:py-16 dark-mode:bg-gray-900 md:px-8 dark-mode:bg-black dark-mode:text-white list-slice md:my-32"
     >
       <div class="col-start-2 col-end-10 py-8">
         <h2
